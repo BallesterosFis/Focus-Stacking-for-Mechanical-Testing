@@ -31,7 +31,6 @@ This document lists all components required to build the automated Focus Stackin
 | Nuts/Washers M2.5 | Nut M2.5, Washer M2.5, Screw M2.5 x 8mm | Set | ~$4.00 |
 | Screws M3 | M3 (6mm, 8mm, 12mm, 25mm), Nuts, Washers | Set | ~$6.50 |
 | Screws M4 | M4 x 6mm | 6 | $1.00 |
-| Feet | Rubber feet | 3 | - |
 
 ## 4. 3D Printed Parts
 *Material Recommendation: PLA or PETG*
@@ -46,6 +45,7 @@ This document lists all components required to build the automated Focus Stackin
 * 3x Large Gear
 * 3x Small Gear
 * 2x Sample Clip
+* 3x Feet
 * Tools: Lens Tool, Nut Tool, Band Tool
 
 **Estimated 3D Printing Cost:** ~$15.00 (Filament cost)
