@@ -1,8 +1,7 @@
 # Focus Stacking for Mechanical Testing
 
 ## Overview
-This project provides an open-source hardware and software solution for **Focus Stacking** in mechanical testing analysis. It helps overcome depth-of-field limitations in optical microscopy when analyzing fracture surfaces, microstructures, or macroscopic failures.
-
+This project provides an open-source hardware and software solution for **Focus Stacking** in mechanical testing analysis. It helps overcome depth-of-field limitations in optical microscopy when analyzing tribological samples.
 The system integrates a motorized Z-axis controlled by a Raspberry Pi with custom Python scripts to capture and merge focal planes into a single, fully focused composite image.
 
 ## Repository Structure
