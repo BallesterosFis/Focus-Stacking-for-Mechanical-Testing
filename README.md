@@ -6,7 +6,7 @@ The system integrates a motorized Z-axis controlled by a Raspberry Pi with custo
 
 ## Repository Structure
 * **`z_stack_capture.py`**: Main control script. Coordinates the Raspberry Pi, stepper motors (via Sangaboard), and camera to capture the image stack automatically.
-* **`DOF.py`**: Utility script to calculate the theoretical Depth of Field (DOF) based on optical parameters.
+* **`DOF.py`**: Utility script to calculate the Depth of Field (DOF) based on optical parameters.
 * **`BOM.md`**: Detailed list of all hardware components and costs.
 
 ## Hardware
