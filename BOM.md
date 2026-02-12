@@ -1,6 +1,6 @@
 # Bill of Materials (BOM)
 
-This document lists all components required to build the automated Focus Stacking microscope.
+This document lists all components required to build the automated Focus Stacking microscope (OpenFlexure Delta Stage Microscope).
 
 **Estimated Grand Total:** $291.50 USD
 
@@ -33,7 +33,7 @@ This document lists all components required to build the automated Focus Stackin
 | Screws M4 | M4 x 6mm | 6 | $1.00 |
 
 ## 4. 3D Printed Parts
-*Material Recommendation: PLA or PETG*
+*Material Recommendation: PLA*
 
 * 1x Main Body
 * 1x Raspberry Pi & Sangaboard Base
