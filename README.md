@@ -13,8 +13,8 @@ The system integrates a motorized Z-axis controlled by a Raspberry Pi with custo
 ## Hardware
 The microscope is built using off-the-shelf optics, standard electronics, and 3D printed parts.
 
-* **Estimated Cost:** ~$290 USD
-* **Key Components:** Raspberry Pi 4, Sangaboard driver, 20x Achromatic Lens.
+* **Estimated Cost:** ~$300 USD
+* **Key Components:** OpenFlexure Microscope, 20x Achromatic Lens.
 
 **[View the full Bill of Materials (BOM)](BOM.md)**
 
