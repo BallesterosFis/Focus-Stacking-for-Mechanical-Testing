@@ -130,7 +130,7 @@ def z_stack_scan(microscope, base_uri, folder_name, num_images, step_size):
 
         # Save the image as a JPEG file with an index-padded filename
         filename = os.path.join(save_path, f"z_{idx:03d}.jpeg")
-        Image.fromarray(img_array).save(filename, "JPEG")
+        Image.fromarray(img_array).save(filename, format="TIFF", compression="none")
 
         # Record the Z position for this image in the log file
         with open(log_file, "a") as f:
