@@ -35,17 +35,17 @@ This document lists all components required to build the automated Focus Stackin
 ## 4. 3D Printed Parts
 *Material Recommendation: PLA*
 
-* 1x Main Body
-* 1x Raspberry Pi & Sangaboard Base
-* 1x Reflection Illumination Condenser
-* 1x Reflection Illumination Holder
-* 1x Reflection Optics Module Casing
-* 1x Camera Cover
-* 1x Filter Cube
-* 3x Large Gear
-* 3x Small Gear
-* 2x Sample Clip
-* 3x Feet
-* Tools: Lens Tool, Nut Tool, Band Tool
+* 1x [Main Body](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/Main_Body.stl)
+* 1x [Raspberry Pi & Sangaboard Base](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/Illumination_Condenser%20(Modified).stl)
+* 1x [Reflection Illumination Condenser](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/Illumination_Condenser%20(Modified).stl)
+* 1x [Reflection Illumination Holder](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/Illumination_Holder.stl)
+* 1x [Reflection Optics Module Casing](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/optics_picamera2_rms_f50d13_beamsplitter_delta.stl)
+* 1x [Camera Cover](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/picamera_2_cover.stl)
+* 1x [Filter Cube](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/Filter_Cube.stl)
+* 3x [Large Gear](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/large_gears.stl)
+* 3x [Small Gear](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/small_gears.stl)
+* 2x [Sample Clip](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/sample_clips.stl)
+* 3x [Feet](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/feet.stl)
+* Tools: [Lens Tool](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/lens_tool.stl), [Nut Tool, Band Tool](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/actuator_assembly_tools.stl)
 
 **Estimated 3D Printing Cost:** ~$15.00 (Filament cost)
