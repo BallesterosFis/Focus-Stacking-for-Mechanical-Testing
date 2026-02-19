@@ -33,7 +33,21 @@ This document lists all components required to build the automated Focus Stackin
 | Screws M4 | M4 x 6mm | 6 | $1.00 | -
 
 ## 4. 3D Printed Parts
-*Material Recommendation: PLA*
+All STL files are available in the `/3D_Parts/` directory of this repository.
+
+---
+
+### 4.1 Recommended Printing Parameters
+
+- **Material:** PLA  
+- **Layer height:** 0.2 mm  
+- **Infill:** 20–30% (rectilinear or grid pattern)  
+- **Nozzle diameter:** 0.4 mm  
+- **Supports:** Not required for any part  
+
+---
+
+### 4.2 Printed Components 
 
 * 1x [Main Body](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/Main_Body.stl)
 * 1x [Raspberry Pi & Sangaboard Base](https://github.com/BallesterosFis/Focus-Stacking-for-Mechanical-Testing/blob/main/3D_Parts/Illumination_Condenser%20(Modified).stl)
