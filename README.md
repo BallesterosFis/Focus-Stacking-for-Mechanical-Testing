@@ -1,43 +1,96 @@
-# Focus Stacking for Mechanical Testing
+# Robotic Focus Stacking for Mechanical Surface Analysis
 
-## Overview
-This project provides an open-source hardware and software solution for **Focus Stacking** in mechanical testing analysis. It helps overcome depth-of-field limitations in optical microscopy when analyzing tribological samples.
-The system integrates a motorized Z-axis controlled by a Raspberry Pi with custom Python scripts to capture and merge focal planes into a single, fully focused composite image.
+## Abstract
+
+This repository contains the hardware control scripts and computational tools supporting the robotic focus stacking system.
+
+The system addresses depth of field limitations in optical microscopy during tribological and mechanical surface analysis. By integrating a motorized Z-axis stage with automated image acquisition and post-processing, the setup enables reproducible extended depth-of-field (EDOF) imaging using a low-cost optical platform.
+
+
+---
+
+## Scientific Motivation
+
+Extended depth of field (EDOF) imaging mitigates the limitations of conventional optical microscopy by computationally merging multiple focal planes into a single fully focused image. However, commercial automated systems remain costly and frequently closed-source.
+
+This project implements a fully reproducible robotic focus stacking workflow based on:
+
+- Motorized Z-axis control  
+- Theoretical depth of field estimation  
+- Automated stack acquisition  
+- Alignment and EDOF reconstruction  
+- Optional 3D surface visualization  
+
+---
+
+## System Architecture
+
+The complete workflow is structured as follows:
+
+Optical Setup  
+↓  
+Experimental DOF Estimation (`DOF.py`)  
+↓  
+Motorized Z-Stack Acquisition (`z_stack_capture.py`)  
+↓  
+Stack Alignment (SIFT-based registration in Fiji)  
+↓  
+Extended Depth of Field Reconstruction  
+↓  
+3D Surface Visualization  
+
+The hardware implementation is based on an OpenFlexure microscope platform integrated with a motorized Z-stage controlled by a Raspberry Pi.
+
+---
 
 ## Repository Structure
-* **`z_stack_capture.py`**: Main control script. Coordinates the Raspberry Pi, stepper motors (via Sangaboard), and camera to capture the image stack automatically.
-* **`DOF.py`**: Utility script to calculate the Depth of Field (DOF) based on optical parameters.
-* **`BOM.md`**: Detailed list of all hardware components and costs.
 
-## Hardware
-The microscope is built using off-the-shelf optics, standard electronics, and 3D printed parts.
+- `z_stack_capture.py`  
+  Controls Z-axis motion and automated image acquisition via Raspberry Pi and Sangaboard.
 
-* **Estimated Cost:** ~$300 USD
-* **Key Components:** OpenFlexure Microscope, 20x Achromatic Lens.
+- `DOF.py`  
+  Calculates the experimental depth of field based on three metrics (Laplacian variance, Tenengrad gradient, and wavelet energy) and the 80% and FWHM creteria.
 
-**[View the full Bill of Materials (BOM)](BOM.md)**
+- `BOM.md`  
+  Bill of materials including hardware components and cost estimation (~300 USD total system cost).
 
-## Requirements
-To run the control scripts on the Raspberry Pi:
-* Python 3.7+
-* `picamera`
-* `RPi.GPIO`
-* `numpy`
-* `opencv-python`
+## Experimental Results
 
-## Usage
+The system enables:
 
-1.  **Calculate Step Size:**
-    Run `DOF.py` to find the optimal Z-step for your lens.
-    ```bash
-    python DOF.py
-    ```
+- Fully focused composite images of wear tracks and surface defects  
+- Improved visualization of depth-dependent features  
+- 3D surface rendering from focal stacks  
 
-2.  **Capture Stack:**
-    Ensure the Sangaboard is connected and run:
-    ```bash
-    python z_stack_capture.py
-    ```
+---
+
+## Reproducibility
+
+All scripts are designed to run on a Raspberry Pi (Python 3.7+) with standard scientific libraries:
+
+- numpy  
+- opencv-python  
+- RPi.GPIO  
+- picamera  
+
+Post-processing is performed using Fiji (ImageJ) with:
+
+- [Linear Stack Alignment with SIFT ](https://imagej.net/plugins/linear-stack-alignment-with-sift) 
+- [Extended Depth of Field (Expert Mode) ](https://imagej.net/plugins/extended-depth-of-field) 
+- [3D Surface Plot ](https://imagej.net/ij/plugins/surface-plot-3d.html) 
+
+---
+
+## Limitations
+
+Current implementation:
+
+- Requires post-processing in Fiji (not fully integrated in Python)  
+- Assumes stable illumination and minimal lateral drift   
+
+Future work will focus on full pipeline automation and improved illumination stability control.
+
 
 ## License
-This project is open-source.
+
+CERN Open Hardware Licence v1.2
