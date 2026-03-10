@@ -1,4 +1,4 @@
-# Robotic Focus Stacking for Mechanical Surface Analysis
+# Robotic Microscopy open-source setups for all in focus computational imaging at low cost
 
 ## Abstract
 
